@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+  background-color: hsl(185, 75%, 39%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left -300px top -500px, right -120px bottom -550px;
+}
+
+.container_card {
+  height: 410px;
+  width: 400px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.container_card_header {
+  background: url(./images/bg-pattern-card.svg);
+  width: 100%;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.container_card_avatar {
+  border-radius: 50%;
+  border: 5px solid white;
+  transform: translateY(50px);
+}
+
+.container_card_body_heading {
+  display: block;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 65px;
+}
+
+.container_card_body_heading span {
+  color: hsl(227, 10%, 46%);
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+.container_card_body_location {
+  color: hsl(227, 10%, 46%);
+  text-align: center;
+  display: block;
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+.container_card_footer {
+  margin-top: 28px;
+  border-top: 0.5px solid hsla(0, 0%, 59%, 0.5);
+}
+
+.container_card_footer {
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container_card_footer_information_number {
+  font-weight: 700;
+  display: block;
+  text-align: center;
+}
+
+.container_card_footer_information_type {
+  font-size: 12px;
+  color: hsl(227, 10%, 46%);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    background-position: left -500px top -500px, right -520px bottom -550px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .container {
+    background-position: left -800px top -500px, right -520px bottom -750px;
+    padding: 5%;
+}
+
+}
